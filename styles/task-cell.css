@@ -1,0 +1,18 @@
+.task-cell {
+    border-inline-start: 1px solid currentColor;
+    border-block-end: 1px solid currentColor;
+    padding: .25rem;
+}
+.task-cell:nth-child(8n) {
+    border-inline-end: 1px solid currentColor;
+}
+
+.task-cell.is-active::before {
+    content: 'Sin título';
+    font-size: small;
+    background-color: #c6dafc;
+    padding: .25rem;
+    display: block;
+    border-radius: .25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
