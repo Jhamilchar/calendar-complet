@@ -1,0 +1,23 @@
+.rest {
+    display: flex;
+    background-color: var(--gray10);
+    gap: .2rem;
+    max-inline-size: 12.25rem;
+    border-radius: 0.25rem;
+}
+
+.rest input {
+    background: none;
+    border: none;
+    padding-block: 0.75rem;
+    width: 100%;
+}
+
+.rest i {
+    color: var(--gray50);
+    inline-size: 1rem;
+    block-size: 1rem;
+    padding-inline-start: 1rem;
+    padding-block: 0.75rem;
+
+}
