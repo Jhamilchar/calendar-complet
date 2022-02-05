@@ -4,7 +4,7 @@
     padding: .25rem;
 }
 .task-cell:nth-child(8n) {
-    border-inline-end: 1px solid currentColor;
+    /* border-inline-end: 1px solid currentColor; */
 }
 
 .task-cell.is-active::before {

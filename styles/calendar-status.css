@@ -1,0 +1,9 @@
+.calendar-status {
+    display: inline-flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.calendar-status_date {
+    font: var(--subtitle-subtitle1);
+}
