@@ -7,6 +7,7 @@
     <title>Google Calendar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="favicon" href="./icons/icon-calendar.svg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -466,10 +467,62 @@
         </main>
     </div>
     <dialog class="modal">
-        open
+        <form class="create-task">
+            <div class="input is-outstanding">
+                <div class="input-body">
+                    <input required name="title" type="text" placeholder="Añade titulo">
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-icon-clock"></i>
+                <div class="input-body">
+                    <input type="date" name="date" required>
+                    <input type="time" name="time-start" required>
+                    <input type="time" name="time-end" required>
+                </div>
+            </div>
+
+            <div class="input">
+                <i class="icon-icon-users"></i>
+                <div class="input-body">
+                    <input type="text" list="guest" name="guest" placeholder="Agregar invitados" required>
+                    <datalist id="guest">
+                        <option value="Nefi"></option>
+                        <option value="Lizeht"></option>
+                        <option value="Jhamil"></option>
+                        <option value="Luis"></option>
+                        <option value="Aida"></option>
+                    </datalist>
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-icon-gps"></i>
+                <div class="input-body">
+                    <input name="location" type="text" placeholder="Agregar ubicacion">
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-icon-text"></i>
+                <div class="input-body">
+                    <input type="file" multiple>
+                </div>    
+            </div>
+            <div class="input">
+                <i class="icon-icon-text"></i>
+                <div class="input-body">
+                    <textarea name="description" placeholder="Agregar descripcion" id="" cols="40" rows="3"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="modal-actions">
+            <button id="close-modal" class="button">
+                Cancelar
+            </button>
+            <button class="button is-primary">
+                Guardar
+            </button>
+        </div>
     </dialog>
-    <script>
-        document.querySelector('.modal').showModal()
-    </script>
+    <script src="./js/app.js" type="module"></script>
 </body>
 </html>

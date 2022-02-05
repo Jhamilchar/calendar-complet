@@ -1,3 +1,28 @@
 .modal {
-    border: 1px solid red;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-inline-size: 28rem;
+    top: 200px;
+    left: 200px;
+    padding-inline: 3rem;
+    padding-block: 1.5rem;
+    margin: initial;
+    inline-size: 100%;
+    border-radius: .25rem;
+    border: none;
+    position: absolute;
+    box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0274815);
+}
+
+.modñ [open] {
+    display: flex;
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
 }
